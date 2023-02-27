@@ -1,0 +1,62 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(175 175 175);
+    z-index: 1200;
+}
+
+.image_modal {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: #6b6b6b;
+    border-radius: 5px;
+    box-shadow: 5px 4px 5px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 4px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 4px 5px -1px rgba(0,0,0,0.75);
+}
+
+.image_modal .shine-button{
+    text-align: right;
+}
+
+@media screen and (min-width: 375px) {
+    .image_modal {
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .image_modal {
+        width: 400px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .image_modal {
+        width: 750px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .image_modal {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .image_modal {
+        width: auto;
+        max-width: calc(100vw - 48px);
+        max-height: calc(100vh - 24px);
+    }
+}
+
