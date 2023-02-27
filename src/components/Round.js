@@ -123,6 +123,7 @@ const Round = ({setStatistics, players, statistics, setPlayers}) => {
                                 number={currentCard[index].number}
                                 suit={currentCard[index].suit}
                                 takeCard={takeCard}
+                                resultOfRound={resultOfRound[index]}
                             />
                         )}
                     </React.Fragment>
